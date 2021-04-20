@@ -14,11 +14,11 @@ __Parte 3: Configurando portas e pastas no apache:__
 
 ```nano /etc/apache2/ports.conf```
 
-__Troque a porta 80 ou qualquer outra que tiver pra qualquer outra porta,exemplo:__
+# Troque a porta 80 ou qualquer outra que tiver pra qualquer outra porta,exemplo:
 
-__Listen 80 » Listen 8888__
+# Listen 80 » Listen 8888__
 
-__Salve o arquivo (Ctrl + O e Ctrl + X)__
+# Salve o arquivo (Ctrl + O e Ctrl + X)
 
 ```service apache2 restart```
 
@@ -30,20 +30,20 @@ __Parte 4: Rodando Script pra testar__
 
 ```cd /root && ./onlineapp.sh```
 
-__Agora entre na IP+PORTA do seu server no diretório /server/online e veja se retornou algum número,exemplo:__
+# Agora entre na IP+PORTA do seu server no diretório /server/online e veja se retornou algum número,exemplo: #
 
 http://191.96.224.142:8888/server/online
 
 __Parte 5: Atualizando pelo cron__
 
-__Vamos trabalhar com a atualização dos users online no server a cada 1 min__
+# Vamos trabalhar com a atualização dos users online no server a cada 1 min #
 
 ```crontab -e```
 
-__Add no final do arquivo:__
+# Add no final do arquivo: #
 
 ```*/1 * * * * cd  /root/ && ./onlineapp.sh```
 
-__Salve e feche o arquivo__
+# Salve e feche o arquivo #
 
 ```service cron reload```
