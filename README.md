@@ -1,7 +1,7 @@
 # StatusServer
 Parte 1 - Baixando Script 
 
-cd /root && wget http://downloads.onehostbr.xyz/files/online-script/onlineapp.sh && chmod +x onlineapp.sh
+cd /root && wget https://raw.githubusercontent.com/fabricio94b/StatusServer/main/onlineapp.sh && chmod +x onlineapp.sh
 
 
 Parte 2: Instalando Apache2 e Cron
