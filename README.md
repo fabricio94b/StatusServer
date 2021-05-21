@@ -16,7 +16,7 @@ __Parte 3: Configurando portas e pastas no apache:__
 
 Troque a porta 80 ou qualquer outra que tiver pra qualquer outra porta,exemplo:
 
-Listen 80 » Listen 8888
+Listen 80 » Listen 8110
 
 Salve o arquivo (Ctrl + O e Ctrl + X)
 
@@ -32,7 +32,7 @@ __Parte 4: Rodando Script pra testar__
 
 Agora entre na IP+PORTA do seu server no diretório /server/online e veja se retornou algum número,exemplo:
 
-http://191.96.224.142:8888/server/online
+http://191.96.224.142:8110/server/online
 
 __Parte 5: Atualizando pelo cron__
 
